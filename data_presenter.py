@@ -1,8 +1,27 @@
-import pandas as pd
-import matplotlib.pyplot as plt
+#1 and #2
+df = open("CupcakeInvoices.csv")
 
 #3
-df = pd.read_csv("Cupcakeinvoices.csv")
+# print([line.strip() for line in df])
+
+#4
+# print([line.strip().split(',')[2] for line in df])
+
+#5
+# print([round(float(line.strip().split(',')[3]) * float(line.strip().split(',')[4]),2) for line in df])
+
+#6
+# print(round(sum([float(line.strip().split(',')[3]) * float(line.strip().split(',')[4]) for line in df]),2))
+
+#7
+df.close()
+
+
+# import pandas as pd
+# import matplotlib.pyplot as plt
+
+#3
+# df = pd.read_csv("Cupcakeinvoices.csv")
 
 # for i in df.itertuples():
 #     print(i)
@@ -24,4 +43,5 @@ df = pd.read_csv("Cupcakeinvoices.csv")
 
 # print(round(sum(res),2))
 
-#7
+
+
